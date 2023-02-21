@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+
+    <link rel="icon" type="image/x-icon" href="/Proyecto CV/icono/NFS.ico">
+
+    <link rel="stylesheet" type="text/css" href="/Proyecto CV/css/style.css" />
+
+    <!--Open Graph Data-->
+    <meta property="og:title" content="Curriculum Vitae" />
+    <meta property="og:type" content="Lic. Prof. Nicolás Francisco Salimbeni" />
+    <meta property="og:url" content=" http://www.example.com" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+    <meta property="og:description" content="Descripcion" />
+</head>
+<body>
+    <header>
+        <h1>CURRICULUM VITAE</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/Proyecto CV/index.html">DATOS PERSONALES</a></li>
+            <li><a href="/Proyecto CV/formacion.html">FORMACIÓN ACADÉMICA</a></li>
+            <li><a href="/Proyecto CV/complementaria.html">FORMACIÓN COMPLEMENTARIA</a></li>
+            <li><a href="/Proyecto CV/experiencia.html">EXPERIENCIA PROFESIONAL</a></li>
+            <li><a href="/Proyecto CV/trabajos.html">TRABAJOS REALIZADOS</a></li>
+            <li><a href="/Proyecto CV/contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <section class="contenido">   
+          <!-- formulario de contacto en html y css -->  
+
+        <div class="contact_form">
+
+            <div class="formulario">      
+                <h2>Formulario de contacto</h2>
+                <h3>Escribime y en breve me pondré en contacto contigo</h3>
+
+                <form action="https://formsubmit.co/nfsalimbeni@hotmail.com" method="POST">
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                    
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                    
+                    <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                    
+                    <p>
+                        <label for="website" class="colocar_website">Sitio web
+                        </label>
+                        <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                    </p>    
+                    
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>    
+                    
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>                     
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>                    
+                        <button class="boton_contacto" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/Proyecto%20CV/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>Campos son obligatorios.
+                    </p>          
+                    
+                </form>
+            </div>  
+        </div>     
+    
+    </section>   
+    
+    <footer class="footer">
+        <p>Todos los derechos reservados - Lic. Prof. Nicolás Salimbeni</p>
+    </footer>
+
+    <script src="/Proyecto CV/js/index.js"></script>       
+</body>
+</html>
